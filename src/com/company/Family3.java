@@ -1,14 +1,20 @@
 package com.company;
 
-public class Flat extends Family implements Toloit {
+public class Family3 extends Person{
 
 
-    public Flat(Person[] people) {
-        super(people);
+    public Family3(String adress, int piople) {
+        super(adress, piople);
     }
 
     @Override
     public void toloit() {
-        System.out.println("ком-услуга за Квартиру");
+        System.out.println("платят за аренду");
+    }
+
+    @Override
+    public void jashait() {
+        System.out.println("живут в общежитие");
+        System.out.println("------------------");
     }
 }
