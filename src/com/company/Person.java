@@ -2,46 +2,39 @@ package com.company;
 
 import java.util.Arrays;
 
-public  class Person implements Toloit{
-private String adress;
-private int piople;
+public  class Person {
+private String name;
+private int age;
 
-    public Person(String adress, int piople) {
-        this.adress = adress;
-        this.piople = piople;
+
+
+
+    public Person(String name , int age) {
+        this.name = name;
+this.age=age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public int getAge() {
+        return age;
     }
 
     public String getAdress() {
-        return adress;
+        return name;
     }
 
     public void setAdress(String adress) {
-        this.adress = adress;
-    }
-
-    public int getPiople() {
-        return piople;
-    }
-
-    public void setPiople(int piople) {
-        this.piople = piople;
-    }
-
-    @Override
-    public void toloit() {
-
-    }
-
-    @Override
-    public void jashait() {
-
+        this.name = adress;
     }
 
     @Override
     public String toString() {
-        return
-                "Адрес проживания -  " + adress +
-                "\nКоличество людей - " + piople;
+        return  " Имя - " + name + "   Возраст - " +age+"\n";
+
     }
+
 }
 

@@ -2,21 +2,29 @@ package com.company;
 
 import java.util.Arrays;
 
-public class Family extends Person  {
+public abstract class Family implements Toloit  {
+ private Person[] person;
 
+    public Family(Person[] person) {
+        this.person = person;
 
-    public Family(String adress, int piople) {
-        super(adress, piople);
+    }
+
+    public Person[] getPerson() {
+        return person;
+    }
+
+    public void setPerson(Person[] person) {
+        this.person = person;
     }
 
     @Override
-    public void toloit() {
-        System.out.println("платят за ком-услуги");
+    public String toString() {
+        return "Family\n" + Arrays.toString(person);
     }
 
-    @Override
-    public void jashait() {
-        System.out.println("живут в квартире");
-        System.out.println("------------------");
+
     }
-}
+
+
+

@@ -1,6 +1,8 @@
 package com.company;
 
 public interface Toloit {
+
     abstract void toloit();
-abstract void jashait();
+abstract void adress();
+abstract void kolichestvo();
 }
